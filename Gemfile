@@ -55,3 +55,5 @@ gem 'mandrill-api'
 gem 'google-tag-manager-rails'
 gem 'lograge'
 gem 'rails_best_practices'
+
+gem 'rails_admin'

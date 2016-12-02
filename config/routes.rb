@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
   authenticate :user do
 
     namespace :employer do
@@ -39,7 +41,7 @@ Rails.application.routes.draw do
     get 'codereview' => 'profile#codereview', :as => :code_review
     get 'coders' => 'profile#coders', :as => :coders
 
-    scope "/admin" do
+    scope "/custom-admin" do
 
       get 'dashboard' => 'dashboard#index', :as => :dashboard
 
